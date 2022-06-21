@@ -1,12 +1,20 @@
-var currentNumberWrapper = document.getElementById("currentNumber");
+/*
+Caso você queira ir além, aqui estão algumas dicas de coisas para tentar:
+
+  1 - Tente implementar os eventos usando o método addEventListener.
+  2 - Crie condicionais que desabilitam o botão de incrementar ou decrementar quando count chegar a um determinado valor (ex.: 0 <= count =< 10).
+  3 - Mude a cor do texto em CURRENT_NUMBER para vermelho quando o número for negativo.
+*/
+
+var contadorNumero = document.getElementById("currentNumber");
 var currentNumber = 0;
 
 function increment(){
   currentNumber += 1;
-  currentNumberWrapper.innerHTML = currentNumber;
+  contadorNumero.innerHTML = currentNumber;
 }
 
 function decrement(){
   currentNumber -= 1;
-  currentNumberWrapper.innerHTML = currentNumber;
+  contadorNumero.innerHTML = currentNumber;
 }
