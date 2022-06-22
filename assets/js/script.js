@@ -12,20 +12,23 @@ var currentNumber = 0;
 function increment(){
   currentNumber += 1;
   contadorNumero.innerHTML = currentNumber;
-  if (contadorNumero.innerHTML < 0){
-    contadorNumero.style.color = "red";
-    } else {
-      contadorNumero.style.color = "white";
-    }
+  // if (contadorNumero.innerHTML < 0){
+  //   contadorNumero.style.color = "red";
+  // } else {
+  //     contadorNumero.style.color = "white";
+  //  }
+  contadorNumero.style.color = (contadorNumero.innerHTML < 0) ? "red" : "white";
+
 }
 
 
 function decrement(){
   currentNumber -= 1;
   contadorNumero.innerHTML = currentNumber;
-  if (contadorNumero.innerHTML < 0){
-    contadorNumero.style.color = "red";
-    } else {
-      contadorNumero.style.color = "white";
-    }
+  // if (contadorNumero.innerHTML < 0){
+  //   contadorNumero.style.color = "red";
+  //   } else {
+  //     contadorNumero.style.color = "white";
+  //   }
+  contadorNumero.style.color = (contadorNumero.innerHTML < 0) ? "red" : "white";
 }
